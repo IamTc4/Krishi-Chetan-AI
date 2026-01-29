@@ -1,0 +1,2254 @@
+{
+  "9876500000": {
+    "phone": "9876500000",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 1",
+    "location": "Koregaon",
+    "lat": 17.717639596325647,
+    "lng": 74.10433396604921,
+    "crop_type": "Wheat",
+    "land_size": 6.0,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Sowing",
+    "risk_score": 54,
+    "advisory_history": [
+      {
+        "id": "adv_3961",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500001": {
+    "phone": "9876500001",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 2",
+    "location": "Wai",
+    "lat": 17.892425075408653,
+    "lng": 73.86122620245321,
+    "crop_type": "Wheat",
+    "land_size": 7.8,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 66,
+    "advisory_history": [
+      {
+        "id": "adv_2898",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_6085",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_8672",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_7382",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500002": {
+    "phone": "9876500002",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 3",
+    "location": "Wai",
+    "lat": 17.972233913060794,
+    "lng": 73.87162358323233,
+    "crop_type": "Soybean",
+    "land_size": 7.7,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Harvesting",
+    "risk_score": 82,
+    "advisory_history": [
+      {
+        "id": "adv_5372",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_4992",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_6792",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_4706",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_8814",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500003": {
+    "phone": "9876500003",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 4",
+    "location": "Karad",
+    "lat": 17.319272904820078,
+    "lng": 74.22024521781874,
+    "crop_type": "Wheat",
+    "land_size": 8.3,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Flowering",
+    "risk_score": 41,
+    "advisory_history": [
+      {
+        "id": "adv_1961",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_7678",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_3474",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500004": {
+    "phone": "9876500004",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 5",
+    "location": "Satara",
+    "lat": 17.634935117989283,
+    "lng": 73.96524637432822,
+    "crop_type": "Onion",
+    "land_size": 3.3,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Vegetative",
+    "risk_score": 12,
+    "advisory_history": [
+      {
+        "id": "adv_4576",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_3877",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_3890",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_9549",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_9685",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500005": {
+    "phone": "9876500005",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 6",
+    "location": "Phaltan",
+    "lat": 17.955817410509397,
+    "lng": 74.41867197561632,
+    "crop_type": "Sugarcane",
+    "land_size": 2.4,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Vegetative",
+    "risk_score": 82,
+    "advisory_history": [
+      {
+        "id": "adv_3070",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_8174",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_4169",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_2000",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500006": {
+    "phone": "9876500006",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 7",
+    "location": "Satara",
+    "lat": 17.709911959705916,
+    "lng": 73.98921251436417,
+    "crop_type": "Soybean",
+    "land_size": 7.9,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Sowing",
+    "risk_score": 3,
+    "advisory_history": [
+      {
+        "id": "adv_2742",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_3255",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_4619",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_6346",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500007": {
+    "phone": "9876500007",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 8",
+    "location": "Koregaon",
+    "lat": 17.727705949984813,
+    "lng": 74.11766989343133,
+    "crop_type": "Tomato",
+    "land_size": 4.2,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Sowing",
+    "risk_score": 46,
+    "advisory_history": [
+      {
+        "id": "adv_5396",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500008": {
+    "phone": "9876500008",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 9",
+    "location": "Phaltan",
+    "lat": 17.94339021284872,
+    "lng": 74.42446061224183,
+    "crop_type": "Wheat",
+    "land_size": 8.3,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 6,
+    "advisory_history": [
+      {
+        "id": "adv_4511",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_3679",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_5935",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_3394",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500009": {
+    "phone": "9876500009",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 10",
+    "location": "Phaltan",
+    "lat": 17.94538789494262,
+    "lng": 74.4609423956537,
+    "crop_type": "Tomato",
+    "land_size": 8.6,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Harvesting",
+    "risk_score": 75,
+    "advisory_history": [
+      {
+        "id": "adv_2919",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_8839",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_2330",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500010": {
+    "phone": "9876500010",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 11",
+    "location": "Karad",
+    "lat": 17.284820360234583,
+    "lng": 74.21678025973141,
+    "crop_type": "Cotton",
+    "land_size": 6.3,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Vegetative",
+    "risk_score": 19,
+    "advisory_history": [
+      {
+        "id": "adv_8955",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_5100",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_1115",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_3963",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500011": {
+    "phone": "9876500011",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 12",
+    "location": "Wai",
+    "lat": 17.925803709973838,
+    "lng": 73.92221767987711,
+    "crop_type": "Cotton",
+    "land_size": 4.2,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Vegetative",
+    "risk_score": 43,
+    "advisory_history": [
+      {
+        "id": "adv_6835",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500012": {
+    "phone": "9876500012",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 13",
+    "location": "Satara",
+    "lat": 17.663025685669542,
+    "lng": 74.04150392419379,
+    "crop_type": "Cotton",
+    "land_size": 1.0,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 95,
+    "advisory_history": [
+      {
+        "id": "adv_1419",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500013": {
+    "phone": "9876500013",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 14",
+    "location": "Koregaon",
+    "lat": 17.668628551199095,
+    "lng": 74.08920070695666,
+    "crop_type": "Rice",
+    "land_size": 2.7,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Sowing",
+    "risk_score": 56,
+    "advisory_history": [
+      {
+        "id": "adv_8109",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500014": {
+    "phone": "9876500014",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 15",
+    "location": "Phaltan",
+    "lat": 17.97158569907199,
+    "lng": 74.44394232727566,
+    "crop_type": "Soybean",
+    "land_size": 5.1,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Sowing",
+    "risk_score": 9,
+    "advisory_history": [
+      {
+        "id": "adv_2554",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_2385",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_4849",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_7203",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_2765",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500015": {
+    "phone": "9876500015",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 16",
+    "location": "Phaltan",
+    "lat": 17.97595850405848,
+    "lng": 74.42233005388861,
+    "crop_type": "Maize",
+    "land_size": 9.9,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Sowing",
+    "risk_score": 49,
+    "advisory_history": [
+      {
+        "id": "adv_5566",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500016": {
+    "phone": "9876500016",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 17",
+    "location": "Mahabaleshwar",
+    "lat": 17.899223696826457,
+    "lng": 73.66291680907155,
+    "crop_type": "Rice",
+    "land_size": 6.2,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Flowering",
+    "risk_score": 21,
+    "advisory_history": [
+      {
+        "id": "adv_2005",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500017": {
+    "phone": "9876500017",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 18",
+    "location": "Karad",
+    "lat": 17.318251038243844,
+    "lng": 74.19394121037817,
+    "crop_type": "Cotton",
+    "land_size": 9.9,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Sowing",
+    "risk_score": 70,
+    "advisory_history": [
+      {
+        "id": "adv_7541",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500018": {
+    "phone": "9876500018",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 19",
+    "location": "Karad",
+    "lat": 17.316559246589772,
+    "lng": 74.21427093274262,
+    "crop_type": "Tomato",
+    "land_size": 3.1,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Vegetative",
+    "risk_score": 78,
+    "advisory_history": [
+      {
+        "id": "adv_7199",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_5701",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500019": {
+    "phone": "9876500019",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 20",
+    "location": "Wai",
+    "lat": 17.9741810450483,
+    "lng": 73.9052178030888,
+    "crop_type": "Rice",
+    "land_size": 3.2,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Sowing",
+    "risk_score": 76,
+    "advisory_history": [
+      {
+        "id": "adv_7378",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500020": {
+    "phone": "9876500020",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 21",
+    "location": "Mahabaleshwar",
+    "lat": 17.94020660009432,
+    "lng": 73.6922743565574,
+    "crop_type": "Wheat",
+    "land_size": 2.4,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 56,
+    "advisory_history": [
+      {
+        "id": "adv_6057",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_9554",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_5280",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_4775",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_8293",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500021": {
+    "phone": "9876500021",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 22",
+    "location": "Karad",
+    "lat": 17.33091509490656,
+    "lng": 74.17680016826596,
+    "crop_type": "Rice",
+    "land_size": 1.4,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Vegetative",
+    "risk_score": 95,
+    "advisory_history": [
+      {
+        "id": "adv_3264",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_5265",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_5390",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500022": {
+    "phone": "9876500022",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 23",
+    "location": "Phaltan",
+    "lat": 17.943166830953775,
+    "lng": 74.39006256194276,
+    "crop_type": "Maize",
+    "land_size": 4.4,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 73,
+    "advisory_history": [
+      {
+        "id": "adv_9313",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_8355",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_2983",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_2188",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_5796",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500023": {
+    "phone": "9876500023",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 24",
+    "location": "Wai",
+    "lat": 17.97680220658689,
+    "lng": 73.90864163662141,
+    "crop_type": "Soybean",
+    "land_size": 5.0,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Sowing",
+    "risk_score": 20,
+    "advisory_history": [
+      {
+        "id": "adv_1047",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500024": {
+    "phone": "9876500024",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 25",
+    "location": "Phaltan",
+    "lat": 17.976194324383172,
+    "lng": 74.38843760318251,
+    "crop_type": "Wheat",
+    "land_size": 6.9,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Sowing",
+    "risk_score": 46,
+    "advisory_history": [
+      {
+        "id": "adv_1205",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_8993",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_1199",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_6813",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_2546",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500025": {
+    "phone": "9876500025",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 26",
+    "location": "Phaltan",
+    "lat": 17.995113633025344,
+    "lng": 74.45822881877001,
+    "crop_type": "Maize",
+    "land_size": 0.9,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Vegetative",
+    "risk_score": 76,
+    "advisory_history": [
+      {
+        "id": "adv_8646",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_1858",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500026": {
+    "phone": "9876500026",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 27",
+    "location": "Mahabaleshwar",
+    "lat": 17.94290873434254,
+    "lng": 73.67730926637081,
+    "crop_type": "Sugarcane",
+    "land_size": 9.4,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 41,
+    "advisory_history": [
+      {
+        "id": "adv_5774",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_1915",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_1036",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500027": {
+    "phone": "9876500027",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 28",
+    "location": "Koregaon",
+    "lat": 17.732076090130178,
+    "lng": 74.10729335653386,
+    "crop_type": "Tomato",
+    "land_size": 8.2,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Harvesting",
+    "risk_score": 94,
+    "advisory_history": [
+      {
+        "id": "adv_8014",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_5783",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_7329",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500028": {
+    "phone": "9876500028",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 29",
+    "location": "Wai",
+    "lat": 17.987177130781138,
+    "lng": 73.90822919542057,
+    "crop_type": "Tomato",
+    "land_size": 6.0,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Sowing",
+    "risk_score": 67,
+    "advisory_history": [
+      {
+        "id": "adv_2836",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_8545",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500029": {
+    "phone": "9876500029",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 30",
+    "location": "Karad",
+    "lat": 17.28600965699244,
+    "lng": 74.19856076957123,
+    "crop_type": "Maize",
+    "land_size": 1.1,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Vegetative",
+    "risk_score": 62,
+    "advisory_history": [
+      {
+        "id": "adv_9879",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_1830",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_4982",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500030": {
+    "phone": "9876500030",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 31",
+    "location": "Wai",
+    "lat": 17.94245964628631,
+    "lng": 73.86498415079546,
+    "crop_type": "Wheat",
+    "land_size": 7.9,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Vegetative",
+    "risk_score": 49,
+    "advisory_history": [
+      {
+        "id": "adv_2615",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_4679",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_4518",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_8238",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500031": {
+    "phone": "9876500031",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 32",
+    "location": "Satara",
+    "lat": 17.641908204133347,
+    "lng": 73.98397027116346,
+    "crop_type": "Sugarcane",
+    "land_size": 0.8,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Vegetative",
+    "risk_score": 26,
+    "advisory_history": [
+      {
+        "id": "adv_7008",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_3851",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_3448",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_3832",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500032": {
+    "phone": "9876500032",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 33",
+    "location": "Mahabaleshwar",
+    "lat": 17.950765452642315,
+    "lng": 73.66457693429568,
+    "crop_type": "Tomato",
+    "land_size": 0.5,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Sowing",
+    "risk_score": 32,
+    "advisory_history": [
+      {
+        "id": "adv_3590",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500033": {
+    "phone": "9876500033",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 34",
+    "location": "Satara",
+    "lat": 17.649784590228283,
+    "lng": 73.9711295207927,
+    "crop_type": "Sugarcane",
+    "land_size": 2.5,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Flowering",
+    "risk_score": 71,
+    "advisory_history": [
+      {
+        "id": "adv_2447",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_5325",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_9424",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500034": {
+    "phone": "9876500034",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 35",
+    "location": "Koregaon",
+    "lat": 17.6587640541691,
+    "lng": 74.0599175409977,
+    "crop_type": "Soybean",
+    "land_size": 4.5,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 28,
+    "advisory_history": [
+      {
+        "id": "adv_2592",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500035": {
+    "phone": "9876500035",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 36",
+    "location": "Satara",
+    "lat": 17.701696159919727,
+    "lng": 73.97464512301384,
+    "crop_type": "Rice",
+    "land_size": 3.3,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Sowing",
+    "risk_score": 11,
+    "advisory_history": [
+      {
+        "id": "adv_2619",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_3289",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_6505",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_9759",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_6017",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500036": {
+    "phone": "9876500036",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 37",
+    "location": "Satara",
+    "lat": 17.72995290811231,
+    "lng": 73.9914322186352,
+    "crop_type": "Cotton",
+    "land_size": 3.5,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Vegetative",
+    "risk_score": 74,
+    "advisory_history": [
+      {
+        "id": "adv_8958",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_2755",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_7847",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500037": {
+    "phone": "9876500037",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 38",
+    "location": "Mahabaleshwar",
+    "lat": 17.9069016723558,
+    "lng": 73.60381475400047,
+    "crop_type": "Soybean",
+    "land_size": 5.6,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Sowing",
+    "risk_score": 13,
+    "advisory_history": [
+      {
+        "id": "adv_6232",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500038": {
+    "phone": "9876500038",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 39",
+    "location": "Phaltan",
+    "lat": 17.984036948885105,
+    "lng": 74.47763451792622,
+    "crop_type": "Soybean",
+    "land_size": 1.0,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Flowering",
+    "risk_score": 45,
+    "advisory_history": [
+      {
+        "id": "adv_6116",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_4423",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_1004",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_8926",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_4043",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500039": {
+    "phone": "9876500039",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 40",
+    "location": "Mahabaleshwar",
+    "lat": 17.90563812276999,
+    "lng": 73.69446907913259,
+    "crop_type": "Sugarcane",
+    "land_size": 6.1,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Vegetative",
+    "risk_score": 32,
+    "advisory_history": [
+      {
+        "id": "adv_4211",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_3688",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_1526",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_8199",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_3524",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500040": {
+    "phone": "9876500040",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 41",
+    "location": "Koregaon",
+    "lat": 17.656296345983748,
+    "lng": 74.11645391530065,
+    "crop_type": "Rice",
+    "land_size": 9.8,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Flowering",
+    "risk_score": 31,
+    "advisory_history": [
+      {
+        "id": "adv_2304",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500041": {
+    "phone": "9876500041",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 42",
+    "location": "Koregaon",
+    "lat": 17.71726827978165,
+    "lng": 74.08142294342855,
+    "crop_type": "Onion",
+    "land_size": 6.6,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 21,
+    "advisory_history": [
+      {
+        "id": "adv_5802",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_1385",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_3011",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500042": {
+    "phone": "9876500042",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 43",
+    "location": "Karad",
+    "lat": 17.296461962412852,
+    "lng": 74.23460933552765,
+    "crop_type": "Maize",
+    "land_size": 1.4,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Sowing",
+    "risk_score": 25,
+    "advisory_history": [
+      {
+        "id": "adv_3808",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500043": {
+    "phone": "9876500043",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 44",
+    "location": "Satara",
+    "lat": 17.68119377859431,
+    "lng": 73.95951753169699,
+    "crop_type": "Tomato",
+    "land_size": 0.7,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Flowering",
+    "risk_score": 20,
+    "advisory_history": [
+      {
+        "id": "adv_5101",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_9351",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_3778",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_9186",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500044": {
+    "phone": "9876500044",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 45",
+    "location": "Phaltan",
+    "lat": 17.9805112305143,
+    "lng": 74.4430375852532,
+    "crop_type": "Sugarcane",
+    "land_size": 6.5,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Sowing",
+    "risk_score": 59,
+    "advisory_history": [
+      {
+        "id": "adv_8017",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500045": {
+    "phone": "9876500045",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 46",
+    "location": "Wai",
+    "lat": 17.934078484730417,
+    "lng": 73.92558164899724,
+    "crop_type": "Onion",
+    "land_size": 4.3,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Harvesting",
+    "risk_score": 5,
+    "advisory_history": [
+      {
+        "id": "adv_3391",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_6434",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_6369",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_2304",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_1507",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500046": {
+    "phone": "9876500046",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 47",
+    "location": "Koregaon",
+    "lat": 17.74660467030391,
+    "lng": 74.09447569272113,
+    "crop_type": "Sugarcane",
+    "land_size": 4.7,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Alluvial",
+    "growth_stage": "Vegetative",
+    "risk_score": 94,
+    "advisory_history": [
+      {
+        "id": "adv_5478",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_3854",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500047": {
+    "phone": "9876500047",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 48",
+    "location": "Satara",
+    "lat": 17.678081082793543,
+    "lng": 73.9793531438583,
+    "crop_type": "Soybean",
+    "land_size": 5.7,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Sowing",
+    "risk_score": 43,
+    "advisory_history": [
+      {
+        "id": "adv_9892",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_6551",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_3679",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_8003",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_5973",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500048": {
+    "phone": "9876500048",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 49",
+    "location": "Karad",
+    "lat": 17.33446855307539,
+    "lng": 74.21916882630383,
+    "crop_type": "Sugarcane",
+    "land_size": 5.1,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Flowering",
+    "risk_score": 45,
+    "advisory_history": [
+      {
+        "id": "adv_6567",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_8184",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_1417",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_2413",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500049": {
+    "phone": "9876500049",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 50",
+    "location": "Phaltan",
+    "lat": 17.982206431816337,
+    "lng": 74.4178340411195,
+    "crop_type": "Cotton",
+    "land_size": 1.4,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 94,
+    "advisory_history": [
+      {
+        "id": "adv_1428",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_1352",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_7711",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500050": {
+    "phone": "9876500050",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 51",
+    "location": "Satara",
+    "lat": 17.719123977291133,
+    "lng": 74.04430168288503,
+    "crop_type": "Sugarcane",
+    "land_size": 3.3,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Vegetative",
+    "risk_score": 6,
+    "advisory_history": [
+      {
+        "id": "adv_5387",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500051": {
+    "phone": "9876500051",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 52",
+    "location": "Satara",
+    "lat": 17.670908394115944,
+    "lng": 74.02616577661249,
+    "crop_type": "Wheat",
+    "land_size": 7.7,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Black Soil",
+    "growth_stage": "Sowing",
+    "risk_score": 8,
+    "advisory_history": [
+      {
+        "id": "adv_1894",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_1157",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500052": {
+    "phone": "9876500052",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 53",
+    "location": "Mahabaleshwar",
+    "lat": 17.920275869825154,
+    "lng": 73.68362167592254,
+    "crop_type": "Sugarcane",
+    "land_size": 3.2,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Flowering",
+    "risk_score": 99,
+    "advisory_history": [
+      {
+        "id": "adv_2536",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_9286",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_4282",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_4976",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_9232",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500053": {
+    "phone": "9876500053",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 54",
+    "location": "Karad",
+    "lat": 17.27506279878651,
+    "lng": 74.19946766642941,
+    "crop_type": "Wheat",
+    "land_size": 9.8,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Harvesting",
+    "risk_score": 69,
+    "advisory_history": [
+      {
+        "id": "adv_4144",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_5731",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_4803",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_4872",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500054": {
+    "phone": "9876500054",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 55",
+    "location": "Satara",
+    "lat": 17.649891554690374,
+    "lng": 74.01727905781044,
+    "crop_type": "Wheat",
+    "land_size": 3.2,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Harvesting",
+    "risk_score": 87,
+    "advisory_history": [
+      {
+        "id": "adv_8564",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_8875",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_4185",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_6080",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_2265",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500055": {
+    "phone": "9876500055",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 56",
+    "location": "Wai",
+    "lat": 17.93493460003239,
+    "lng": 73.88042363118731,
+    "crop_type": "Sugarcane",
+    "land_size": 8.4,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Vegetative",
+    "risk_score": 95,
+    "advisory_history": [
+      {
+        "id": "adv_3659",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_3259",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_2856",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      }
+    ]
+  },
+  "9876500056": {
+    "phone": "9876500056",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 57",
+    "location": "Phaltan",
+    "lat": 17.973614327922576,
+    "lng": 74.47253251173318,
+    "crop_type": "Rice",
+    "land_size": 9.5,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Sowing",
+    "risk_score": 24,
+    "advisory_history": [
+      {
+        "id": "adv_3873",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_3829",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_3106",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_5699",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "pending"
+      },
+      {
+        "id": "adv_6373",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500057": {
+    "phone": "9876500057",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 58",
+    "location": "Wai",
+    "lat": 17.91820168165571,
+    "lng": 73.86117936764892,
+    "crop_type": "Maize",
+    "land_size": 7.9,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Vegetative",
+    "risk_score": 69,
+    "advisory_history": [
+      {
+        "id": "adv_5427",
+        "type": "Irrigation",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_1607",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  },
+  "9876500058": {
+    "phone": "9876500058",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 59",
+    "location": "Karad",
+    "lat": 17.309728902355488,
+    "lng": 74.23055706926725,
+    "crop_type": "Wheat",
+    "land_size": 2.4,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Red Soil",
+    "growth_stage": "Flowering",
+    "risk_score": 99,
+    "advisory_history": [
+      {
+        "id": "adv_4834",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      },
+      {
+        "id": "adv_7616",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      },
+      {
+        "id": "adv_5807",
+        "type": "Weather",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "ignored"
+      }
+    ]
+  },
+  "9876500059": {
+    "phone": "9876500059",
+    "password": "pass",
+    "role": "farmer",
+    "name": "Farmer 60",
+    "location": "Koregaon",
+    "lat": 17.651622725895475,
+    "lng": 74.05821779918192,
+    "crop_type": "Onion",
+    "land_size": 7.2,
+    "sowing_date": "2025-11-15",
+    "soil_type": "Clay",
+    "growth_stage": "Sowing",
+    "risk_score": 15,
+    "advisory_history": [
+      {
+        "id": "adv_4434",
+        "type": "Pest",
+        "message": "Sample advisory message",
+        "date": "2026-01-10",
+        "status": "followed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi-Chetan AI | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: radial-gradient(circle at top left, #1a2e1a, #000);
+            overflow: hidden;
+        }
+
+        .login-card {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            /* Glass effect */
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            background: linear-gradient(to right, #fff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            color: #ccc;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: #fff;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #00ff88;
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+        }
+
+        .auth-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #00ff88, #00cc6a);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .auth-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+        }
+
+        .toggle-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .toggle-link a {
+            color: #00ff88;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .lang-btn-sm {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .lang-btn-sm:hover,
+        .lang-btn-sm.active {
+            background: #00ff88;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="lang-switch">
+        <button class="lang-btn-sm active" onclick="setLoginLang('en')">EN</button>
+        <button class="lang-btn-sm" onclick="setLoginLang('hi')">हिंदी</button>
+        <button class="lang-btn-sm" onclick="setLoginLang('mr')">मराठी</button>
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-card" id="login-form">
+        <h2 data-trn="login_title">Krishi-Chetan</h2>
+        <p class="subtitle" data-trn="login_subtitle">Secure Access for Farmers</p>
+
+        <form onsubmit="handleLogin(event)">
+            <div class="input-group">
+                <label data-trn="label_phone">Mobile Number</label>
+                <input type="text" id="login-phone" placeholder="Example: 9876543210" required>
+            </div>
+            <div class="input-group">
+                <label data-trn="label_pass">Password</label>
+                <input type="password" id="login-pass" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="auth-btn" data-trn="btn_login">Login Securely</button>
+        </form>
+
+        <div class="toggle-link">
+            <span data-trn="no_account">New User?</span>
+            <a href="#" onclick="toggleAuth()" data-trn="link_register">Register Here</a>
+        </div>
+        <div id="login-msg" style="text-align: center; color: #ff4b4b; margin-top: 10px;"></div>
+    </div>
+
+    <!-- Register Form -->
+    <div class="login-card hidden" id="register-form">
+        <h2 data-trn="reg_title">Join Krishi-Chetan</h2>
+        <p class="subtitle" data-trn="reg_subtitle">Start your smart farming journey</p>
+
+        <form onsubmit="handleRegister(event)">
+            <div class="input-group">
+                <label data-trn="label_name">Full Name</label>
+                <input type="text" id="reg-name" placeholder="Ramesh Kumar" required>
+            </div>
+            <div class="input-group">
+                <label data-trn="label_phone">Mobile Number</label>
+                <input type="text" id="reg-phone" placeholder="9876543210" required>
+            </div>
+            <div class="input-group">
+                <label data-trn="label_pass">Create Password</label>
+                <input type="password" id="reg-pass" placeholder="••••••••" required>
+            </div>
+            <div class="input-group">
+                <label data-trn="label_role">I am a...</label>
+                <select id="reg-role"
+                    style="width:100%; padding: 12px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color:#fff; border-radius:8px;">
+                    <option value="farmer">Farmer (किसान)</option>
+                    <option value="officer">Officer (अधिकारी)</option>
+                </select>
+            </div>
+            <button type="submit" class="auth-btn" data-trn="btn_register">Create Account</button>
+        </form>
+
+        <div class="toggle-link">
+            <span data-trn="has_account">Already registered?</span>
+            <a href="#" onclick="toggleAuth()" data-trn="link_login">Login Here</a>
+        </div>
+        <div id="reg-msg" style="text-align: center; color: #ff4b4b; margin-top: 10px;"></div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script>
+        // Inline script for auth logic to keep it self-contained for now
+        function toggleAuth() {
+            document.getElementById('login-form').classList.toggle('hidden');
+            document.getElementById('register-form').classList.toggle('hidden');
+            document.getElementById('login-msg').innerText = '';
+            document.getElementById('reg-msg').innerText = '';
+        }
+
+        async function handleLogin(e) {
+            e.preventDefault();
+            const phone = document.getElementById('login-phone').value;
+            const pass = document.getElementById('login-pass').value;
+            const btn = e.target.querySelector('button');
+            const msg = document.getElementById('login-msg');
+
+            btn.innerText = 'Verifying...';
+
+            try {
+                // Use URLSearchParams for OAuth2PasswordRequestForm
+                const formData = new URLSearchParams();
+                formData.append('username', phone);
+                formData.append('password', pass);
+
+                const res = await fetch('/api/auth/token', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: formData
+                });
+
+                const data = await res.json();
+                if (res.ok) {
+                    localStorage.setItem('token', data.access_token);
+                    localStorage.setItem('user_name', data.user_name);
+                    localStorage.setItem('user_role', data.role);
+                    window.location.href = '/'; // Go to Dashboard
+                } else {
+                    msg.innerText = data.detail || 'Login Failed';
+                }
+            } catch (err) {
+                msg.innerText = 'Network Error';
+                console.error(err);
+            }
+            btn.innerText = 'Login Securely';
+        }
+
+        async function handleRegister(e) {
+            e.preventDefault();
+            const name = document.getElementById('reg-name').value;
+            const phone = document.getElementById('reg-phone').value;
+            const pass = document.getElementById('reg-pass').value;
+            const role = document.getElementById('reg-role').value;
+            const btn = e.target.querySelector('button');
+            const msg = document.getElementById('reg-msg');
+
+            btn.innerText = 'Creating Account...';
+
+            try {
+                const res = await fetch('/api/auth/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, phone, password: pass, role })
+                });
+
+                const data = await res.json();
+                if (res.ok) {
+                    alert('Registration Successful! Please Login.');
+                    toggleAuth();
+                } else {
+                    msg.innerText = data.detail || 'Registration Failed';
+                }
+            } catch (err) {
+                msg.innerText = 'Network Error';
+            }
+            btn.innerText = 'Create Account';
+        }
+
+        // Translations Logic specific for Login Page
+        function setLoginLang(lang) {
+            document.querySelectorAll('.lang-btn-sm').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Re-use the translations object if available, or just mock for now if not loaded?
+            // Since we imported translations.js, we can use it.
+            if (typeof translations !== 'undefined' && translations[lang]) {
+                document.querySelectorAll('[data-trn]').forEach(el => {
+                    const key = el.getAttribute('data-trn');
+                    if (translations[lang][key]) {
+                        el.innerText = translations[lang][key];
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

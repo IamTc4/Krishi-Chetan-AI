@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi-Chetan AI | Last-Mile Farmer Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">🌿</span>
+                <div>
+                    <h1>Krishi-Chetan</h1>
+                    <span class="version-tag">ENTERPRISE AI</span>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li class="active" onclick="showModule('dashboard')" data-trn="nav_dashboard">🏠 Dashboard</li>
+                <li onclick="showModule('diagnose')" data-trn="nav_diagnose">🔍 AI Diagnose</li>
+                <li onclick="showModule('market')" data-trn="nav_market">💰 Market & Subsidy</li>
+                <li onclick="showModule('officer')" style="color: #ffb800;">👮 Officer Dashboard</li>
+                <li onclick="showModule('settings')" data-trn="nav_settings">⚙️ System & Ledger</li>
+            </ul>
+
+            <div class="tech-stack-panel">
+                <p>Hardware Status</p>
+                <div class="status-item"><span class="dot green"></span> GPU: RTX 4050 (Active)</div>
+                <div class="status-item"><span class="dot green"></span> Model: EffNet-B4 (Int8)</div>
+                <div class="status-item"><span class="dot orange"></span> Net: Offline (Edge Mode)</div>
+            </div>
+
+            <div class="voice-status">
+                <div style="margin-bottom: 15px; display: flex; justify-content: center; gap: 8px;">
+                    <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+                    <button class="lang-btn" onclick="setLanguage('mr')">मराठी</button>
+                </div>
+                <button id="voice-btn" class="voice-btn">🎤 <span id="mic-status" data-trn="voice_mic">Tap to
+                        Speak</span></button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header>
+                <div>
+                    <h2 id="page-title" data-trn="nav_dashboard">Real-Time Farm Command</h2>
+                    <p style="color: #888; font-size: 0.9rem;">Satara District, Maharashtra | 2.5 Acres</p>
+                </div>
+                <div class="user-profile">
+                    <span data-trn="welcome">Farmer: <strong>Ramesh Kumar</strong></span>
+                    <button class="logout-btn-sm" onclick="logout()"
+                        style="margin-left:10px; background:none; border:1px solid #ff4b4b; color:#ff4b4b; cursor:pointer; padding:2px 8px; border-radius:4px;">Logout</button>
+                    <div class="status-badge online">● Secure Edge Node</div>
+                </div>
+            </header>
+
+            <!-- Chat Widget -->
+            <div class="chat-widget closed" id="chat-widget">
+                <div class="chat-header" onclick="toggleChat()">
+                    <span>🤖 Krishi-Sahayak AI</span>
+                    <span id="chat-toggle-icon">▲</span>
+                </div>
+                <div class="chat-body" id="chat-body">
+                    <div class="chat-msg bot">
+                        <p data-trn="chat_welcome">Namaste! How can I help you regarding your farm today?</p>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Ask about weather, prices..."
+                        onkeypress="handleChatKey(event)">
+                    <button onclick="sendChat()">➤</button>
+                </div>
+            </div>
+
+            <!-- Dashboard Module -->
+            <section id="dashboard" class="module fade-in">
+                <!-- Top Stats Row -->
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <div class="stat-icon">🌱</div>
+                        <div>
+                            <h4>Est. Yield</h4>
+                            <h2>2.4 Tons</h2>
+                            <small style="color: #00ff88;">▲ 12% vs Last Year</small>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💧</div>
+                        <div>
+                            <h4>Water Efficiency</h4>
+                            <h2>88%</h2>
+                            <small style="color: #00ff88;">Optimal Usage</small>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div>
+                            <h4>Revenue Proj.</h4>
+                            <h2>₹1.2 Lakh</h2>
+                            <small style="color: #ffb800;">Pending Market Shift</small>
+                        </div>
+                    </div>
+                    <div class="stat-card highlight">
+                        <div class="stat-icon">🌤️</div>
+                        <div>
+                            <h4>Weather Index</h4>
+                            <h2>Safe</h2>
+                            <small>No Storms Predicted</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power BI Style Analytics Grid -->
+                <div class="analytics-grid">
+                    <!-- Main Trend Chart -->
+                    <div class="chart-container large">
+                        <div class="chart-header">
+                            <h4>🛡️ Market Price vs. Yield Prediction</h4>
+                            <select class="chart-filter">
+                                <option>Last 6 Months</option>
+                                <option>Last Year</option>
+                            </select>
+                        </div>
+                        <canvas id="mainTrendChart"></canvas>
+                    </div>
+
+                    <!-- Soil Radar Chart -->
+                    <div class="chart-container">
+                        <h4>🧪 Soil Nutrient Balance (N-P-K-pH)</h4>
+                        <div style="height: 250px; position: relative;">
+                            <canvas id="soilRadarChart"></canvas>
+                        </div>
+                        <p class="chart-insight">⚠️ Nitrogen levels slightly low. Consider Urea top-dressing.</p>
+                    </div>
+
+                    <!-- Crop Distribution -->
+                    <div class="chart-container">
+                        <h4>🌾 Crop Acreage Distribution</h4>
+                        <div
+                            style="height: 200px; position: relative; width: 100%; display: flex; justify-content: center;">
+                            <canvas id="cropDoughnutChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Resource Utilization -->
+                    <div class="chart-container">
+                        <h4>🚜 Resource Utilization</h4>
+                        <canvas id="resourceBarChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Diagnostic Module -->
+            <section id="diagnose" class="module hidden">
+                <h3 data-trn="nav_diagnose">AI Crop Diagnosis (EfficientNet-B4)</h3>
+                <div class="diagnostic-container">
+                    <div class="upload-area" id="drop-zone">
+                        <div class="icon-large">📷</div>
+                        <p data-trn="upload_text">Upload Leaf Photo or Use Camera</p>
+                        <input type="file" id="file-input" hidden accept="image/*">
+                    </div>
+                    <div class="results-area hidden" id="diag-result">
+                        <div class="loading-spinner hidden" id="diag-loading">
+                            <div class="tensor-flow-anim"></div>
+                            <p>Running Inference (TensorRT)...</p>
+                        </div>
+                        <div id="diag-content">
+                            <!-- Results populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market Module -->
+            <section id="market" class="module hidden">
+                <h3 data-trn="nav_market">Market Intelligence & Subsidies</h3>
+
+                <div class="grid-container" id="market-prices-list">
+                    <!-- Prices loaded via JS -->
+                    <div class="card">Loading Agmarknet Data...</div>
+                </div>
+
+                <div class="card wide" style="margin-top: 30px; background: linear-gradient(to right, #2d2d2d, #333);">
+                    <h4 data-trn="subsidy_check">💰 Subsidy Eligibility Engine</h4>
+                    <p>Cross-referencing Landholding (2.5 Ac) with Central Schemes...</p>
+                    <ul class="subsidy-list" style="margin-top: 15px;">
+                        <li class="subsidy-item">
+                            <div class="sub-icon">🏛️</div>
+                            <div>
+                                <strong>PM-KISAN Samman Nidhi</strong><br>
+                                <small>Benefit: ₹6,000 / year</small>
+                            </div>
+                            <button class="apply-btn pulse">Auto-Apply</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-container" style="margin-top: 20px;">
+                    <div class="card">
+                        <h4 data-trn="nav_news">📰 Local Agri-News</h4>
+                        <ul class="action-list" id="news-list" style="margin-top: 10px;">
+                            <li>Loading News...</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4 data-trn="nav_retail">🏪 Nearby Retailers</h4>
+                        <ul class="action-list" id="retailer-list" style="margin-top: 10px;">
+                            <li>Loading Shops...</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Officer Module -->
+            <section id="officer" class="module hidden">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+                    <h3>👮 Governance & Command Center (GIS)</h3>
+                    <div style="display: flex; gap: 15px;">
+                        <div class="stat-badge" style="background: rgba(0, 255, 136, 0.1); color: var(--primary);">
+                            Adoption: <strong id="global-adoption-rate">0%</strong>
+                        </div>
+                        <div class="stat-badge" style="background: rgba(255, 184, 0, 0.1); color: var(--accent);">
+                            Farmers: <strong id="total-farmer-count">0</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analytics-grid">
+                    <!-- GIS Heatmap Container (Large) -->
+                    <div class="chart-container large" style="padding: 0; position: relative; height: 450px;">
+                        <div id="map" style="width: 100%; height: 100%; border-radius: 20px;"></div>
+                        <div
+                            style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.8); padding: 12px; border-radius: 12px; z-index: 1000; border: 1px solid var(--glass-border);">
+                            <div
+                                style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem; margin-bottom: 5px;">
+                                <span
+                                    style="width: 10px; height: 10px; border-radius: 50%; background: #ff4b4b; box-shadow: 0 0 5px #ff4b4b;"></span>
+                                High Risk Zone
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 8px; font-size: 0.8rem;">
+                                <span
+                                    style="width: 10px; height: 10px; border-radius: 50%; background: #00ff88; box-shadow: 0 0 5px #00ff88;"></span>
+                                Optimal Adoption
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column Analytics -->
+                    <div style="display: flex; flex-direction: column; gap: 25px;">
+                        <div class="chart-container">
+                            <h4>🌾 Regional Crop Distribution</h4>
+                            <div style="height: 180px; width: 100%;">
+                                <canvas id="officerCropChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <h4>🛡️ Intervention Success (Adoption)</h4>
+                            <div style="height: 150px; width: 100%;">
+                                <canvas id="adoptionTrendChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-container" style="margin-top: 25px;">
+                    <!-- AI Validation Queue -->
+                    <div class="card">
+                        <div
+                            style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                            <h4>🔍 AI Recommendation Review</h4>
+                            <span class="version-tag" style="font-size: 0.5rem;">HUMAN-IN-THE-LOOP</span>
+                        </div>
+                        <div id="ai-review-queue" style="max-height: 400px; overflow-y: auto; padding-right: 5px;">
+                            <div class="card" style="background: rgba(255,255,255,0.02);">Loading Queue...</div>
+                        </div>
+                    </div>
+
+                    <!-- Priority Action List -->
+                    <div class="card">
+                        <h4>⚠️ Field Visit Priority List</h4>
+                        <p style="color: #666; font-size: 0.8rem; margin-top: -8px; margin-bottom: 15px;">Auto-generated
+                            based on high risk & low adoption</p>
+                        <div id="farmer-list" style="max-height: 400px; overflow-y: auto;">
+                            <!-- Priority table loaded via JS -->
+                            <div style="color: #888; text-align: center; padding: 20px;">Analyzing regional data...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-container" style="margin-top: 25px;">
+                    <!-- Bulk Advisory -->
+                    <div class="card wide">
+                        <h4>📢 Broadcast Regional Advisory / Warning</h4>
+                        <div
+                            style="display: grid; grid-template-columns: 1fr 2fr auto; gap: 15px; margin-top: 15px; align-items: center;">
+                            <select id="adv-type" style="margin:0;">
+                                <option value="Pest Alert">🛡️ Pest Outbreak</option>
+                                <option value="Weather Warning">⛈️ Weather Alert</option>
+                                <option value="Govt Subsidy">🏛️ Subsidy Update</option>
+                                <option value="General Advice">🌾 General Advice</option>
+                            </select>
+                            <input type="text" id="adv-msg" placeholder="Type advisory message for current region..."
+                                style="margin:0;">
+                            <button class="action-btn" onclick="sendAdvisory()"
+                                style="margin:0; padding: 10px 30px;">Broadcast ➤</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- System / Settings Module -->
+            <section id="settings" class="module hidden">
+                <h3 data-trn="nav_settings">System Status & Transparency</h3>
+
+                <h4 style="margin-top: 20px; margin-bottom: 15px; color: var(--primary);" data-trn="irrigation_calc">💧
+                    Irrigation Calculator (Penman-Monteith)</h4>
+                <div class="card" style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div class="input-group">
+                        <label>Temp (°C)</label>
+                        <input type="number" id="temp" value="32">
+                    </div>
+                    <div class="input-group">
+                        <label>Humidity (%)</label>
+                        <input type="number" id="humidity" value="45">
+                    </div>
+                    <button class="action-btn" onclick="calcIrrigation()" style="height: 42px; margin-top: 23px;"
+                        data-trn="calc_btn">Calculate</button>
+                </div>
+                <div id="irrigation-result" style="margin-top: 15px;"></div>
+
+                <h4 style="margin-top: 30px; margin-bottom: 15px; color: var(--accent);" data-trn="ledger_title">🔗
+                    Blockchain Ledger (Subsidy Log)</h4>
+                <div class="card wide ledger-card">
+                    <div class="ledger-header">
+                        <span>Block Index</span><span>Timestamp</span><span>Hash</span>
+                    </div>
+                    <div id="ledger-content">
+                        <!-- Ledger items here -->
+                        Checking Local Chain...
+                    </div>
+                    <div style="text-align: right; margin-top: 10px;">
+                        <button class="action-btn small" onclick="loadLedger()">Force Sync</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

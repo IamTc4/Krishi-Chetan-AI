@@ -1,0 +1,14 @@
+{
+  "9876543210": {
+    "phone": "9876543210",
+    "name": "Test Farmer",
+    "role": "farmer",
+    "hashed_password": "79d3a2c7909104c5a8d7f2f4d4ce3bb4bb77b6501c14e15929bffa1aba7f0e09"
+  },
+  "9876543211": {
+    "phone": "9876543211",
+    "name": "Test Officer",
+    "role": "officer",
+    "hashed_password": "aa0a41e79b28dbd9464b803bd08d96b8cf7c0e27bb31376607c6533f0110fd3d"
+  }
+}
